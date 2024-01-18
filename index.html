@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simplotel Assignment</title>
+
+  <!-- Icons -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@28,500,1,0" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar-toggler" id="navbarToggler">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="navbar-links">
+      <a href="#" class="navbar-link">Home</a>
+      <a href="#" class="navbar-link">Order</a>
+      <a href="#" class="navbar-link">Food</a>
+      <a href="#" class="navbar-link">Restaurant</a>
+      <a href="#" class="navbar-link">Testimonials</a>
+      <a href="#" class="navbar-link">Contact Us</a>
+    </div>
+    <div class="navbar-icons">
+      <span class="material-symbols-outlined"> menu </span>
+    </div>
+  </nav>
+  <!-- Header -->
+  <main>
+    <div class="left">
+      <h2>LOREM IPSUM</h2>
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id
+        est vitae dolor rhoncus tristique. Maecenas metus quam, rhoncus
+        euismod lorem in, sollicitudin viverra eros. Donec dictum luctus quam
+        ut tristique. Curabitur nec faucibus purus. Quisque congue sem nec
+        justo mollis, in tincidunt erat pretium. Sed pulvinar, massa ac porta
+        viverra.</p>
+      <button>
+        Click Me
+      </button>
+    </div>
+    <div class="right first">
+      <img src="./images/pexels-robin-stickel-70497.jpg" alt="">
+    </div>
+  </main>
+
+  <hr>
+
+  <main class="second">
+    <div class="left">
+
+      <div class="first" id="box1"> <img class="first box-image" src="./images/pexels-rachel-claire-6752433.jpg" alt="">
+      </div>
+      <div class="second box-image" id="box2"> <img class="second" src="./images/pexels-mister-mister-3434523.jpg"
+          alt=""></div>
+      <div class="third box-image"><img class="third" src="./images/pexels-eva-bronzini-6141651.jpg" alt=""></div>
+    </div>
+    <div class="right second">
+      <div class="inner-div">
+        <h2>LOREM IPSUM
+        </h2>
+        <p style="letter-spacing: 10px;">LOREM IPSUM </p>
+        <p>SET ADEMIR</p>
+        <button><span>click</span> <img src="./images/icons8-arrow-30.png" alt=""> </button>
+      </div>
+    </div>
+
+  </main>
+
+  <script>
+    const navbarToggler = document.getElementById("navbarToggler");
+    const navbar = document.querySelector(".navbar");
+    const navbarLinks = document.querySelectorAll(".navbar-link");
+
+    navbarToggler.addEventListener("click", () => {
+      navbar.classList.toggle("active");
+      navbarToggler.classList.toggle("active-nav");
+    });
+
+    navbarLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        navbar.classList.remove("active");
+        navbarToggler.classList.toggle("active-nav");
+      });
+    });
+  </script>
+</body>
+
+</html>
