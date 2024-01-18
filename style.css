@@ -92,6 +92,7 @@ body {
   bottom: 0;
   padding: 1rem;
   transition: all 0.3s ease-in-out;
+  margin-top: 2px;
 }
 .navbar.active .navbar-links {
   left: 0;
