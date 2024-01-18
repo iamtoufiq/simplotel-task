@@ -10,11 +10,7 @@
 }
 
 body {
-  /* background: linear-gradient(90deg, #fff1b3, #ffbbe8); */
   background: linear-gradient(to right, #fff1b3, #ffdac9, #ffbbe8);
-  /* #fff1b3 */
-  /* #ffdac9 */
-  /* #ffb5ed */
   font-family: "Open Sans", sans-serif;
 }
 
@@ -249,7 +245,6 @@ main.second .left .third {
   height: 100%;
 }
 #box2 {
-  background-color: green;
   grid-area: 1/2/3/4;
   width: 100%;
 }
