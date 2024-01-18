@@ -314,6 +314,9 @@ main .right.first {
   main .left.first-main {
     padding-inline: 80px;
   }
+  .second.box-image {
+    max-height: 495px;
+  }
   main.second .right .inner-div p {
     font-size: 47px;
     font-weight: 700;
