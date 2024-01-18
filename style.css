@@ -174,8 +174,8 @@ main .left button {
   object-fit: fill;
 }
 main .left {
-  padding-block: 100px;
-  padding-inline: 20px;
+  padding-block: 70px;
+  padding-inline: 10px;
 }
 main .left.first-main {
   padding-inline: 10px;
@@ -187,12 +187,14 @@ main.second {
 }
 .second .left {
   display: grid;
-  grid-template-columns: 50% 50%;
-  column-gap: 10px;
+  /* grid-template-columns: 50% 50%; */
+  gap: 10px;
   row-gap: 5px;
   width: 50%;
   justify-content: center;
   width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
 }
 
 main.second .right {
@@ -282,6 +284,9 @@ main .right.first {
   main .left button {
     width: 200px;
   }
+  main .left {
+    padding-block: 100px;
+  }
   main.second .right .inner-div p {
     letter-spacing: 10px;
     font-size: 42px;
@@ -360,12 +365,7 @@ main .right.first {
   .navbar-toggler {
     visibility: hidden;
   }
-  #box1 {
-    height: 100% !important;
-  }
-  #box1 img {
-    height: 100% !important;
-  }
+
   .navbar {
     justify-content: center;
   }
