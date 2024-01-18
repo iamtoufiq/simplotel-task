@@ -277,10 +277,6 @@ main.second .left .third {
 }
 main .right.first {
   margin-inline: 10px;
-  height: 314px;
-}
-main .right.first img {
-  height: 100%;
 }
 @media (min-width: 640px) {
   main .left button {
