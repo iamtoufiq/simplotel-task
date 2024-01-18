@@ -313,10 +313,16 @@ main .right.first {
 }
 
 @media (min-width: 768px) {
+  main .right.first {
+    margin-inline: 10px;
+  }
 }
 @media screen and (min-width: 1024px) {
   main .left.first-main {
     padding-inline: 80px;
+  }
+  main .right.first {
+    margin-inline: 0px;
   }
   .second.box-image {
     max-height: 495px;
