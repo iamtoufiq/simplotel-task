@@ -303,6 +303,9 @@ main .right.first {
 @media (min-width: 768px) {
 }
 @media screen and (min-width: 1024px) {
+  main .left.first-main {
+    padding-inline: 80px;
+  }
   main {
     display: flex;
     flex-direction: row;
@@ -327,6 +330,9 @@ main .right.first {
   }
   main.second .right .inner-div {
     width: fit-content;
+  }
+  main.second .left {
+    padding-left: 80px;
   }
 }
 @media screen and (min-width: 1200px) {
