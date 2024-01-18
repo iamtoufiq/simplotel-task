@@ -84,7 +84,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 5rem;
+  gap: 3rem;
   position: fixed;
   top: 44px;
   right: -200vw;
@@ -346,12 +346,23 @@ main .right.first {
   main.second .left {
     padding-left: 80px;
   }
+  main.second .left .second.box-image {
+    height: 100%;
+  }
+  main.second .left .second.box-image img {
+    height: 100%;
+  }
 }
 @media screen and (min-width: 1200px) {
   .navbar-toggler {
     visibility: hidden;
   }
-
+  #box1 {
+    height: 100% !important;
+  }
+  #box1 img {
+    height: 100% !important;
+  }
   .navbar {
     justify-content: center;
   }
