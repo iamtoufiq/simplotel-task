@@ -10,7 +10,11 @@
 }
 
 body {
-  background: linear-gradient(90deg, #fff1b3, #ffbbe8);
+  /* background: linear-gradient(90deg, #fff1b3, #ffbbe8); */
+  background: linear-gradient(to right, #fff1b3, #ffdac9, #ffbbe8);
+  /* #fff1b3 */
+  /* #ffdac9 */
+  /* #ffb5ed */
   font-family: "Open Sans", sans-serif;
 }
 
@@ -129,6 +133,8 @@ main .left h2 {
   color: #191919;
   font-family: Inter;
   font-size: 37.091px;
+  font-size: 35px;
+  letter-spacing: 6px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -136,7 +142,6 @@ main .left h2 {
 main .left p {
   color: #191919;
   font-family: Inter;
-  /* font-size: 12.938px; */
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -160,16 +165,17 @@ main .left button {
 .right {
   max-width: 100%;
 }
-.right.first {
-}
+
 .right img {
   width: 100%;
   object-fit: fill;
-  /* height: 290px; */
 }
 main .left {
   padding-block: 100px;
   padding-inline: 20px;
+}
+main .left.first-main {
+  padding-inline: 10px;
 }
 
 main.second {
@@ -179,23 +185,16 @@ main.second {
 .second .left {
   display: grid;
   grid-template-columns: 50% 50%;
-  /* grid-template-rows: auto auto; */
   column-gap: 10px;
   row-gap: 5px;
   width: 50%;
-  /* justify-content: right; */
   justify-content: center;
   width: 100%;
-  border: 1px solid red;
 }
-/* main.second .left .second {
-  width: 200px;
-} */
+
 main.second .right {
-  /* background-color: green; */
   display: flex;
   width: 50%;
-  border: 1px solid green;
 
   align-items: center;
   width: 100%;
@@ -206,11 +205,15 @@ main.second .right .inner-div {
   padding: 1.5rem;
   margin-inline: 10px;
   margin-bottom: 10px;
+
+  width: 100%;
 }
 main.second .right .inner-div p {
   letter-spacing: 10px;
-  font-size: 42px;
+  font-size: 44px;
   font-weight: bolder;
+  letter-spacing: 10px;
+  font-size: 25px;
 }
 
 main.second .right .inner-div h2 {
@@ -239,7 +242,6 @@ main.second .left .third {
 main.second .left .first,
 main.second .left .third {
   width: 100%;
-  /* height: 100%; */
   height: 230px;
 }
 .box-image {
@@ -249,7 +251,6 @@ main.second .left .third {
 #box2 {
   background-color: green;
   grid-area: 1/2/3/4;
-  /* width: 200px; */
   width: 100%;
 }
 
@@ -273,11 +274,18 @@ main .right.first {
   margin-inline: 10px;
 }
 @media (min-width: 640px) {
+  main.second .right .inner-div p {
+    letter-spacing: 10px;
+    font-size: 42px;
+    font-weight: bolder;
+    letter-spacing: 10px;
+  }
+  main .left h2 {
+    font-size: 45px;
+  }
   main.second .left .first,
   main.second .left .third {
     width: 100%;
-    /* height: 400px; */
-    /* height: 250px; */
     height: 230px;
   }
   main.second .left .second {
@@ -316,6 +324,9 @@ main .right.first {
   }
   main .left {
     padding-inline: 50px;
+  }
+  main.second .right .inner-div {
+    width: fit-content;
   }
 }
 @media screen and (min-width: 1200px) {
