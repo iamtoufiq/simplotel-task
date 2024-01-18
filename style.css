@@ -261,7 +261,6 @@ main.second .left .third {
 
 .second .right h2 {
   color: #191919;
-  /* font-family: Inter; */
   font-family: "Poppins", sans-serif;
   font-size: 12.83px;
   font-style: normal;
@@ -270,7 +269,6 @@ main.second .left .third {
 }
 .second .right p {
   color: #191919;
-  /* font-family: Inter; */
   font-family: "Poppins", sans-serif;
   font-size: 37.091px;
   font-style: normal;
@@ -365,11 +363,9 @@ main .right.first {
   .navbar-toggler {
     visibility: hidden;
   }
-
   .navbar {
     justify-content: center;
   }
-
   .navbar-links {
     flex-basis: calc(80% - 2rem);
     flex-direction: row;
